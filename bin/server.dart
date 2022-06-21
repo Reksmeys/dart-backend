@@ -16,7 +16,7 @@ void main(List<String> args) async {
   var result = parser.parse(args);
 
   // For Google Cloud Run, we respect the PORT environment variable
-  var portStr = result['port'] ?? Platform.environment['PORT'] ?? '8080';
+  var portStr = result['port'] ?? Platform.environment['PORT'] ?? '5001';
   var port = int.tryParse(portStr);
 
   if (port == null) {
